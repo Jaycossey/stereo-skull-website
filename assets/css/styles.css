@@ -1,3 +1,9 @@
+
+/* NAVBAR STYLES ---------------------------------------  */ 
+nav {
+    z-index: 10;
+}
+
 .logo {
     width: 60px; 
     height: 60px;
@@ -24,6 +30,8 @@ div {
     border: 2px solid blue;
 }
 
+
+/* HOMEPAGE STYLES ----------------------------------------------------- */
 #home {
     background-image: url("../images/Skulls_2.jpg");
 }
@@ -36,12 +44,37 @@ div {
     background-size: 80%;
 }
 
+#jumbo1 > p {
+    background-color: #222;
+    width: 25%;
+}
 
+/* BIO STYLES ----------------------------------------------------- */
+
+
+
+/* STORE STYLES --------------------------------------------------- */
+
+/* SHOWS PAGE STYLES ---------------------------------------------- */
+
+/* ALBUM PAGE STYLES ---------------------------------------------- */
+
+/* CONTACT FORM STYLES ---------------------------------------------*/
+
+/* MEDIA QUERIES -------------------------------------------------- */
 @media (min-width: 320px) and (max-width: 991px) {
     #jumbo1 {
         background-size: 100vw;
         background-position: top;
-        padding-top: 40px;
+        background-size: 100%;
+        padding-top: 60px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #jumbo1 > p {
+        width: 50%;
     }
 
     #home {
