@@ -1,0 +1,25 @@
+.logo {
+    width: 60px; 
+    height: 60px;
+}
+
+.bg-grad {
+    background-image: linear-gradient(20deg, #706422 33%, rgba(76, 236, 204, 50) 40%, #000 60%);
+}
+
+.navbar-toggler-icon {
+    background-color: #706422;
+}
+
+.dropdown-toggle {
+    background-color: #000;
+}
+
+section {
+    border: 2px solid red;
+    height: 100vh;
+}
+
+div {
+    border: 2px solid blue;
+}
