@@ -23,3 +23,29 @@ section {
 div {
     border: 2px solid blue;
 }
+
+#home {
+    background-image: url("../images/Skulls_2.jpg");
+}
+
+#jumbo1 {
+    background-image: url("../images/coverart.jpg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+
+@media (min-width: 320px) and (max-width: 991px) {
+    #jumbo1 {
+        background-size: 100vw;
+        background-position: top;
+        padding-top: 40px;
+    }
+
+    #home {
+        padding-top: 40px;
+        font-size: 1rem;
+    }
+}
