@@ -27,7 +27,7 @@ section {
 }
 
 div {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 
@@ -50,7 +50,9 @@ div {
 }
 
 /* BIO STYLES ----------------------------------------------------- */
-
+.baseball:hover {
+    cursor: url('./assets/images/baseball.png'), pointer;
+}
 
 
 /* STORE STYLES --------------------------------------------------- */

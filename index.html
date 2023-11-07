@@ -57,28 +57,35 @@
 
         <!-- Bio Page Styles -->
         <section id="bio">
-            <div class="container" style="width: 100vw; height: 100vh; z-index: 0;">
-                <div class="jumbotron jumbotron-fluid col">
+            <div class="container" style="width: 100vw; height: 100vh; z-index: 0; display: flex; flex-wrap: wrap;">
+                <div class="jumbotron jumbotron-fluid row col-12 text-center m-auto">
                     <div class="container">
                         <h1 class="display-4">Meet Stereo Skull</h1>
-                        <p id="meetStereo" class="lead">test</p>
+                        <p id="meetStereo" class="lead"></p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- On small screens (768px and lower) this section should adapt to be single column stack, must fix -->
+                <div class="col-12 row">
+                    <div class="card col-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <img alt="icon with logo of reviewer" class="rounded-circle align-items-center bg-dark h-25" />
+                            <p class="card-text">Review/Testimonial - Auto scroll after 10 seconds</p>
+                            <p class="card-text">- Author Name</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card col-3 baseball" style="width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-text">Find out more about us with our blog! Hit "Batman's" face to open the link!</p>
+                            <img alt="image of batman" />
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <p>Check out Awakening!</p>
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/XVdTWwuj-vM" title="Stereo ☠ Skull - Awakening (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="card col-6" style="width: 18rem;">
+                        <div class="card-body text-center">
+                            <p>Check out Awakening!</p>
+                            <iframe width="100%" height="90%" src="https://www.youtube.com/embed/XVdTWwuj-vM" title="Stereo ☠ Skull - Awakening (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded"></iframe>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -92,8 +99,7 @@
     </main>
 
     <!-- Custom Scripts -->
-    <script type="module" src="./assets/scripts/scripts.js"></script>
-    <script type="module" src="./assets/scripts/textContent.js"></script>
+    <script src="./assets/scripts/scripts.js"></script>
 
     <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
