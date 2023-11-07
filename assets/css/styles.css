@@ -22,7 +22,7 @@ nav {
 }
 
 section {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     height: 100vh;
 }
 
@@ -50,7 +50,9 @@ div {
 }
 
 /* BIO STYLES ----------------------------------------------------- */
-
+.baseball:hover {
+    cursor: url('./assets/images/baseball.png'), pointer;
+}
 
 
 /* STORE STYLES --------------------------------------------------- */
