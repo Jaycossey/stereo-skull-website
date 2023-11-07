@@ -51,7 +51,7 @@ div {
 
 /* BIO STYLES ----------------------------------------------------- */
 .baseball:hover {
-    cursor: url('./assets/images/baseball.png'), pointer;
+    cursor: url('../images/baseball.png'), pointer;
 }
 
 
