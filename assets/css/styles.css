@@ -117,8 +117,29 @@ div {
         width: 80%;
     }
 
-    #home {
+    #home,
+    #bio {
         padding-top: 40px;
         font-size: 1rem;
     }
+
+    #bio {
+        height: 240vh;
+    }
+
+    .single-column-sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
+
+/*
+    Known bugs:
+        - Cannot reproduce this: On smaller screen sizes (screen size 320 to approx 780px),
+            main only displays on 75% of screen. Close and reopen of page in browser fixed issue
+            - UPDATE - think this is down to chrome dev tools rather than the code. 
+        
+*/
