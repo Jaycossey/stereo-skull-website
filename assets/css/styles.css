@@ -13,9 +13,12 @@
 
 .bg-dark-custom,
 .bg-dark-custom > div {
-    background-color: var(--color-dark);
     color: var(--color-2);
     text-shadow: 2px 2px 3px var(--color-1);
+}
+
+.bg-dark-custom {
+    background-color: var(--color-dark);
 }
 
 .bg-dark-custom > div {
@@ -46,6 +49,7 @@ nav {
 
 section {
     border: 2px solid red;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -56,11 +60,11 @@ div {
 
 /* HOMEPAGE STYLES ----------------------------------------------------- */
 #home {
-    background-image: url("../images/Skulls_2.jpg");
+    background-image: url("../images/bgSkull.png");
 }
 
 #jumbo1 {
-    background-image: url("../images/coverart.jpg");
+    background-image: url("../images/coverart.png");
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
@@ -97,22 +101,46 @@ div {
 
 /* MEDIA QUERIES -------------------------------------------------- */
 @media (min-width: 320px) and (max-width: 991px) {
+
     #jumbo1 {
         background-size: 100vw;
-        background-position: top;
-        background-size: 100%;
+        background-position: center;
+        background-size: 100vh;
         padding-top: 60px;
         height: 100vh;
         justify-content: center;
         align-items: center;
     }
 
-    #jumbo1 > p {
-        width: 50%;
+    #jumbo1 > p{
+        margin: auto;
+        width: 80%;
     }
 
-    #home {
+    #home,
+    #bio {
         padding-top: 40px;
         font-size: 1rem;
     }
+
+    #bio {
+        height: 240vh;
+    }
+
+    .single-column-sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
+
+/*
+    Known bugs:
+        - Cannot reproduce this: On smaller screen sizes (screen size 320 to approx 780px),
+            main only displays on 75% of screen. Close and reopen of page in browser fixed issue
+            - UPDATE - think this is down to chrome dev tools rather than the code. 
+            
+        
+*/
