@@ -5,4 +5,4 @@ const meetStereoText = "Northamtonshire's odd one out that comes around once.\n\
 
 meetStereoEl.textContent = meetStereoText;
 
-console.log(meetStereoEl);
+// console.log(meetStereoEl);
