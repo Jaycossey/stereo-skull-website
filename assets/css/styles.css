@@ -1,3 +1,26 @@
+/* GLOBALS ---------------------------------------------  */
+:root {
+    --color-1: #706422;
+    --color-2: rgba(76, 263, 204, 50);
+    --color-3: #000;
+    --nav-grad: linear-gradient(20deg, var(--color-1) 33%, var(--color-2) 40%, var(--color-3) 60%);
+    --color-dark: #222;
+}
+
+.body {
+    background-color: #adadad;
+}
+
+.bg-dark-custom,
+.bg-dark-custom > div {
+    background-color: var(--color-dark);
+    color: var(--color-2);
+    text-shadow: 2px 2px 3px var(--color-1);
+}
+
+.bg-dark-custom > div {
+    background-color: #333;
+}
 
 /* NAVBAR STYLES ---------------------------------------  */ 
 nav {
@@ -10,15 +33,15 @@ nav {
 }
 
 .bg-grad {
-    background-image: linear-gradient(20deg, #706422 33%, rgba(76, 236, 204, 50) 40%, #000 60%);
+    background-image: var(--nav-grad);
 }
 
 .navbar-toggler-icon {
-    background-color: #706422;
+    background-color: var(--color-1);
 }
 
 .dropdown-toggle {
-    background-color: #000;
+    background-color: var(--color-3);
 }
 
 section {
@@ -54,7 +77,16 @@ div {
     cursor: url('../images/baseball.png'), pointer;
 }
 
+.baseball:active {
+    cursor: url('../images/baseball2.png'), pointer;
+}
 
+.card-image {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 6px solid var(--color-1);
+}
 /* STORE STYLES --------------------------------------------------- */
 
 /* SHOWS PAGE STYLES ---------------------------------------------- */
